@@ -1,0 +1,53 @@
+<body class="hold-transition login-page" style="background-color: #360D6C;">
+<div class="sidenav"></div>
+    <div class="main">          
+        <div class="login-box">
+            <div class="login-logo">
+                <a href="#" style="color: #FFF"><b>Projection Life</b> de Colombia</a>
+            </div>
+            <div class="card">      
+                <div class="card-header">Inicio de sesion</div>                
+                <div class="card-body login-card-body">
+
+                    <form #loginForm="ngForm" (ngSubmit)="onLogin()" >
+                        <div class="alert alert-danger" [hidden]="!error">{{error}}</div>
+                        <label for="email"> Usuario</label>
+                        <div class="input-group mb-3">
+                          <input id="login" type="login" class="form-control " name="login" required autocomplete="login" autofocus [(ngModel)]="form.login"  >
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-envelope"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <label for="password">Contraseña</label>
+                        <div class="input-group mb-3">
+                          <input id="password" type="password" class="form-control" name="password" required autocomplete="current-password" [(ngModel)]="form.password"  >
+                          <div class="input-group-append">
+                            <div class="input-group-text">
+                              <span class="fas fa-lock"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12 text-center">
+                              <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Entrar</button>                            
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-12 text-center">
+                            <a class="btn btn-link" routerLink="/request-password-reset">Recuperar Contraseña!</a>
+                            </div>
+                        </div>
+                      </form>
+                    
+                    
+
+
+                </div><!-- /.login-card-body -->
+            </div>
+        </div>
+    </div>
+</body>

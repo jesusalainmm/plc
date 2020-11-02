@@ -1,0 +1,95 @@
+/* You can add global styles to this file, and also import other style files */
+  body {
+    font-family: "Lato", sans-serif;
+}
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+.sidenav {
+    height: 100%;
+    background-color: #FFF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: url('../src/assets/img/logo.png');
+    background-size: auto;
+    -moz-background-size: auto;
+    -ms-background-size: auto;
+    -wenkit-background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    z-index: 2;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 576px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+    .login-box, .register-box {
+    margin-top: 20px;
+    width: 100%; 
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 50%; 
+        background-color: #360D6C;
+    }
+
+    .sidenav{
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #360D6C !important;
+    color: #fff;
+}
